@@ -1,7 +1,7 @@
 {
   "name": "@ciag/paginator",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pagination helper",
   "scripts": {
     "prebuild": "rm -rf dist",

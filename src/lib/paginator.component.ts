@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
-  selector: 'lib-ciag-paginator',
-  templateUrl: 'ciag-paginator.component.html',
-  styleUrls: ['ciag-paginator.component.scss']
+  selector: 'paginator',
+  templateUrl: 'paginator.component.html',
+  styleUrls: ['paginator.component.scss']
 })
-export class CiagPaginatorComponent implements OnInit {
+export class PaginatorComponent implements OnInit {
   public arrayPages = []
 
   protected _initialPage

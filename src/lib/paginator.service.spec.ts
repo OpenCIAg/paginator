@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { CiagPaginatorService } from './ciag-paginator.service';
+import { PaginatorService } from './paginator.service';
 
-describe('CiagPaginatorService', () => {
+describe('PaginatorService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [CiagPaginatorService]
+      providers: [PaginatorService]
     });
   });
 
-  it('should be created', inject([CiagPaginatorService], (service: CiagPaginatorService) => {
+  it('should be created', inject([PaginatorService], (service: PaginatorService) => {
     expect(service).toBeTruthy();
   }));
 });
