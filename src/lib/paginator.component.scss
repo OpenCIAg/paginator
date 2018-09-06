@@ -1,0 +1,27 @@
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #F5821F;
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+div.input-group-addon {
+  padding-top: 8px;
+}

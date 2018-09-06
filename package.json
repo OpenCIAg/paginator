@@ -1,0 +1,32 @@
+{
+  "name": "@ciag/paginator",
+  "private": false,
+  "version": "0.0.1",
+  "description": "Pagination helper",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "postbuild": "cp package.json dist/",
+    "test": "nyc --reporter=html --reporter=text mocha test/**/*.spec.ts",
+    "predeploy": "npm run build",
+    "deploy": "cd dist/ && npm publish --access public",
+    "coverage": "nyc report --reporter=text-lcov | codeclimate-test-reporter "
+  },
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "author": "Diego",
+  "keywords": [
+    "pagination"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenCIAg/paginator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OpenCIAg/paginator/issues"
+  },
+  "homepage": "https://github.com/OpenCIAg/paginator#readme"
+}

@@ -1,0 +1,7 @@
+<div class="pagination" *ngIf="_totalPagination > 1">
+    <a *ngIf="pageSelected > 0" style="cursor: pointer" (click)="selectPage(0)">&laquo;</a>
+    <a *ngIf="pageSelected > 0" style="cursor: pointer" (click)="searchIcons('previous')">&lsaquo;</a>
+    <a *ngFor='let key of showNum(pageSelected)' [className]="key == pageSelected ? 'active' : ''" style="cursor: pointer" (click)="selectPage(key)">{{key+1}}</a>
+    <a *ngIf="pageSelected+1 < _totalPagination" style="cursor: pointer" (click)="searchIcons('next')">&rsaquo;</a>
+    <a *ngIf="pageSelected+1 < _totalPagination" style="cursor: pointer" (click)="selectPage(_totalPagination-1)">&raquo;</a>
+</div>
