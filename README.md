@@ -39,4 +39,4 @@ reloadArticles(event){
 ```
 
 
-Made with ❤ in Pompéia, SP, Brazil
+Made with ❤ by [@Tiecoo](https://github.com/tiecoo) in Pompeia, SP, Brazil
